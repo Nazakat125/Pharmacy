@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/messages_screen_background"
+    tools:context=".Message">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="75dp"
+        android:hint="Message"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/chatEdit"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentBottom="true"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/chatBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_send_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="8dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="13dp"
+        android:backgroundTint="#00B0FF"
+        android:background="@drawable/circle" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/chat_recy"
+        android:layout_marginBottom="55dp"
+        tools:listitem="@layout/recive_message_recy"/>
+
+
+</RelativeLayout>
